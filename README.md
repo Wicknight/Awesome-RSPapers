@@ -2,7 +2,7 @@ Awesome-RSPapers
 ================
 
 Included Conferences: SIGIR 2020, SIGKDD 2020, RecSys 2020, CIKM 2020,
-AAAI 2021, WSDM 2021, WWW 2021, SIGIR 2021
+AAAI 2021, WSDM 2021, WWW 2021, SIGIR 2021, CIKM 2021, CIKM 2022, WSDM 2022
 
 
 
@@ -48,6 +48,12 @@ AAAI 2021, WSDM 2021, WWW 2021, SIGIR 2021
     -   [Federated Learning in
         Recommendations](#federated-learning-in-recommendations)
     -   [GNN in Recommendations](#gnn-in-Recommendations)
+    -   [Transformer in Recommendations](#gnn-in-Recommendations)
+    -   [Contrastive Learning in Recommendations](#gnn-in-Recommendations)
+    -   [Multi-Modality in Recommendations](#gnn-in-Recommendations)
+    -   [Data Augmentation in Recommendations](#gnn-in-Recommendations)
+    -   [Meta Learning in Recommendations](#gnn-in-Recommendations)
+    -   [Few-Shot Learning in Recommendations](#gnn-in-Recommendations)
 -   [Analysis](#analysis)
 -   [Other](#other)
 
@@ -56,460 +62,183 @@ Task
 
 ### Collaborative Filtering
 
--   LightGCN: Simplifying and Powering Graph Convolution Network for
-    Recommendation. SIGIR 2020
-
--   Deep Critiquing for VAE-based Recommender Systems. SIGIR 2020
-
--   Neighbor Interaction Aware Graph Convolution Networks for
-    Recommendation. SIGIR 2020
-
--   A Framework for Recommending Accurate and Diverse Items Using
-    Bayesian Graph Convolutional Neural Networks. KDD 2020
-
--   Dual Channel Hypergraph Collaborative Filtering. KDD 2020
-
--   Probabilistic Metric Learning with Adaptive Margin for Top-K
-    Recommendation. KDD 2020
-
--   Content-Collaborative Disentanglement Representation Learning for
-    Enhanced Recommendation. RecSys 2020
-
--   Neural Collaborative Filtering vs. Matrix Factorization Revisited.
-    RecSys 2020
-
--   Bilateral Variational Autoencoder for Collaborative Filtering. WSDM
-    2021
-
--   Learning User Representations with Hypercuboids for Recommender
-    Systems. WSDM 2021
-
--   Local Collaborative Autoencoders. WSDM 2021
-
--   A Scalable, Adaptive and Sound Nonconvex Regularizer for Low-rank
-    Matrix Completion. WWW 2021
-
--   HGCF: Hyperbolic Graph Convolution Networks for Collaborative
-    Filtering. WWW 2021
-
--   High-dimensional Sparse Embeddings for Collaborative Filtering. WWW
-    2021
-
--   Collaborative Filtering with Preferences Inferred from Brain
-    Signals. WWW 2021
-
--   Interest-aware Message-Passing GCN for Recommendation. WWW 2021
-
--   Neural Collaborative Reasoning. WWW 2021
-
--   Sinkhorn Collaborative Filtering. WWW 2021
-
--   Disentangling User Interest and Conformity for Recommendation with
-    Causal Embedding. WWW 2021
-    
--   Bootstrapping User and Item Representations for One-Class Collaborative 
-    Filtering. SIGIR 2021
-
--   When and Whom to Collaborate with in a Changing Environment: A Collaborative Dynamic Bandit Solution. SIGIR 2021
-
--   Neural Graph Matching based Collaborative Filtering. SIGIR 2021
-
--   Enhanced Graph Learning for Collaborative Filtering via Mutual Information Maximization. SIGIR 2021
+-   SimpleX: A Simple and Strong Baseline for Collaborative Filtering. CIKM 2021【将Cosine Contrastive Loss引入协同过滤】
+-   Incremental Graph Convolutional Network for Collaborative Filtering. CIKM 2021【增量图卷积神经网络用于协同过滤】
+-   LT-OCF: Learnable-Time ODE-based Collaborative Filtering. CIKM 2021【Learnable-Time CF】
+-   CausCF: Causal Collaborative Filtering for Recommendation Effect Estimation. CIKM 2021【applied paper，因果关系协同过滤用于推荐效果评估】
+-   Vector-Quantized Autoencoder With Copula for Collaborative Filtering. CIKM 2021【short paper，用于协同过滤的矢量量化自动编码器】
+-   Anchor-based Collaborative Filtering for Recommender Systems. CIKM 2021【short paper，Anchor-based推荐系统协同过滤】
+-   VAE++: Variational AutoEncoder for Heterogeneous One-Class Collaborative Filtering. WSDM 2022【异构单类协同过滤的变分自动编码器】
+-   Geometric Inductive Matrix Completion:
+    A Hyperbolic Approach with Unified Message Passing. WSDM 2022 【具有统一消息传递的双曲线方法】
+-   Asymmetrical Context-aware Modulation for Collaborative Filtering Recommendation. CIKM 2022 【用于协同过滤推荐的非对称上下文感知调制】
+-   Dynamic Causal Collaborative Filtering. CIKM 2022 【动态因果协同过滤】
 
 
 ### Sequential/Session-based Recommendations
 
--   Sequential Recommendation with Self-attentive Multi-adversarial
-    Network. SIGIR 2020
-
--   KERL: A Knowledge-Guided Reinforcement Learning Model for Sequential
-    Recommendation. SIGIR 2020
-
--   Modeling Personalized Item Frequency Information for Next-basket
-    Recommendation. SIGIR 2020
-
--   Incorporating User Micro-behaviors and Item Knowledge into
-    Multi-task Learning for Session-based Recommendation. SIGIR 2020
-
--   GAG: Global Attributed Graph Neural Network for Streaming
-    Session-based Recommendation. SIGIR 2020
-
--   Next-item Recommendation with Sequential Hypergraphs. SIGIR 2020
-
--   A General Network Compression Framework for Sequential Recommender
-    Systems. SIGIR 2020
-
--   Make It a Chorus: Knowledge- and Time-aware Item Modeling for
-    Sequential Recommendation. SIGIR 2020
-
--   Global Context Enhanced Graph Neural Networks for Session-based
-    Recommendation. SIGIR 2020
-
--   Self-Supervised Reinforcement Learning for Recommender Systems.
-    SIGIR 2020
-
--   Time Matters: Sequential Recommendation with Complex Temporal
-    Information. SIGIR 2020
-
--   Controllable Multi-Interest Framework for Recommendation. KDD 2020
-
--   Disentangled Self-Supervision in Sequential Recommenders. KDD 2020
-
--   Handling Information Loss of Graph Neural Networks for Session-based
-    Recommendation. KDD 2020
-
--   Contextual and Sequential User Embeddings for Large-Scale Music
-    Recommendation. RecSys 2020
-
--   FISSA:Fusing Item Similarity Models with Self-Attention Networks for
-    Sequential Recommendation. RecSys 2020
-
--   From the lab to production: A case study of session-based
-    recommendations in the home-improvement domain. RecSys 2020
-
--   Recommending the Video to Watch Next: An Offline and Online
-    Evaluation at YOUTV.de. RecSys 2020
-
--   SSE-PT:Sequential Recommendation Via Personalized Transformer.
-    RecSys 2020
-
--   Improving End-to-End Sequential Recommendations with Intent-aware
-    Diversification. CIKM 2020
-
--   Quaternion-based self-Attentive Long Short-term User Preference
-    Encoding for Recommendation. CIKM 2020
-
--   Sequential Recommender via Time-aware Attentive Memory Network. CIKM
-    2020
-
--   Star Graph Neural Networks for Session-based Recommendation. CIKM
-    2020
-
--   Dynamic Memory Based Attention Network for Sequential
-    Recommendation. AAAI 2021
-
--   Noninvasive Self-Attention for Side Information Fusion in Sequential
-    Recommendation. AAAI 2021
-
--   Self-Supervised Hypergraph Convolutional Networks for Session-based
-    Recommendation. AAAI 2021
-
--   An Efficient and Effective Framework for Session-based Social
-    Recommendation. WSDM 2021
-
--   Sparse-Interest Network for Sequential Recommendation. WSDM 2021
-
--   Dynamic Embeddings for Interaction Prediction. WWW 2021
-
--   Session-aware Linear Item-Item Models for Session-based
-    Recommendation. WWW 2021
-
--   RetaGNN: Relational Temporal Attentive Graph Neural Networks for
-    Holistic Sequential Recommendation. WWW 2021
-
--   Adversarial and Contrastive Variational Autoencoder for Sequential
-    Recommendation. WWW 2021
-
--   Future-Aware Diverse Trends Framework for Recommendation. WWW 2021
-
--   DeepRec: On-device Deep Learning for Privacy-Preserving Sequential
-    Recommendation in Mobile Commerce. WWW 2021
-
--   Linear-Time Self Attention with Codeword Histogram for Efficient
-    Recommendation. WWW 2021
-    
--   Category-aware Collaborative Sequential Recommendation. SIGIR 2021
-
--   Sequential Recommendation with Graph Convolutional Networks. SIGIR 2021
-
--   Dual Attention Transfer in Session-based Recommendation with Multi Dimensional Integration. SIGIR 2021
-
--   Unsupervised Proxy Selection for Session-based Recommender Systems. SIGIR 2021
-
--   StackRec: Efficient Training of Very Deep Sequential Recommender Models by Iterative Stacking. SIGIR 2021
-
--   Counterfactual Data-Augmented Sequential Recommendation. SIGIR 2021
-
--   CauseRec: Counterfactual User Sequence Synthesis for Sequential Recommendation. SIGIR 2021
-
--   The World is Binary: Contrastive Learning for Denoising Next Basket Recommendation. SIGIR 2021
-
--   Motif-aware Sequential Recommendation. SIGIR 2021
-
--   Lighter and Better: Low-Rank Decomposed Self-Attention Networks for Next-Item Recommendation. SIGIR 2021
+-   Seq2Bubbles: Region-Based Embedding Learning for User Behaviors in Sequential Recommenders. CIKM 2021【序列推荐中基于区域的用户行为Embedding学习】
+-   Enhancing User Interest Modeling with Knowledge-Enriched Itemsets for Sequential Recommendation. CIKM 2021【序列推荐中使用物品集增强用户兴趣建模】
+-   Continuous-Time Sequential Recommendation with Temporal Graph Collaborative Transformer. CIKM 2021【将时序图协同Transformer用于连续时间序列推荐】
+-   Extracting Attentive Social Temporal Excitation for Sequential Recommendation. CIKM 2021【提取时序激励用于序列推荐】
+-   Hyperbolic Hypergraphs for Sequential Recommendation. CIKM 2021【使用双曲超图进行序列推荐】
+-   Learning Dual Dynamic Representations on Time-Sliced User-Item Interaction Graphs for Sequential Recommendation. CIKM 2021【用于序列推荐的在时间片用户物品交互图上的对偶动态表示】
+-   Lightweight Self-Attentive Sequential Recommendation. CIKM 2021【使用CNN捕获局部特征，使用Self-Attention捕获全局特征】
+-   What is Next when Sequential Prediction Meets Implicitly Hard Interaction? CIKM 2021【序列预测与交互】
+-   Modeling Sequences as Distributions with Uncertainty for Sequential Recommendation. CIKM 2021【short paper，序列建模】
+-   Locker: Locally Constrained Self-Attentive Sequential Recommendation. CIKM 2021【short paper，局部约束的自注意力序列推荐】
+-   CBML: A Cluster-based Meta-learning Model for Session-based Recommendation. CIKM 2021【用于会话推荐的基于聚类的元学习】
+-   Self-Supervised Graph Co-Training for Session-based Recommendation. CIKM 2021【用于会话推荐的自监督图协同训练】
+-   S-Walk: Accurate and Scalable Session-based Recommendation with Random Walks. WSDM 2022【具有随机游走的准确且可扩展的基于会话的推荐】
+-   Learning Multi-granularity Consecutive User Intent Unit for Session-based Recommendation. WSDM 2022【基于会话的推荐学习多粒度连续用户意图单元】
+-   Beyond Learning from Next Item: Sequential Recommendation via Personalized Interest Sustainability. CIKM 2022 【基于个性化兴趣可持续性的序列推荐】
+-   FwSeqBlock: A Field-wise Approach for Modeling Behavior Representation in Sequential Recommendation. CIKM 2022 【建模行为表示】
+-   Dually Enhanced Propensity Score Estimation in Sequential Recommendation. CIKM 2022 【双重增强倾向得分估计】
+-   Hierarchical Item Inconsistency Signal learning for Sequence Denoising in Sequential Recommendation. CIKM 2022 【序列推荐中序列去噪的分层项目不一致信号学习】
+-   ContrastVAE: Contrastive Variational AutoEncoder for Sequential Recommendation. CIKM 2022 【用于序列推荐的对比变分自动编码器】
+-   Disentangling Past-Future Modeling in Sequential Recommendation via Dual Networks. CIKM 2022 【通过双网络解耦序列推荐中的过去未来】
+-   Evolutionary Preference Learning via Graph Nested GRU ODE for Session-based Recommendation. CIKM 2022 【通过图嵌套 GRU ODE 进行进化偏好学习】
+-   Spatiotemporal-aware Session-based Recommendation with Graph Neural Networks. CIKM 2022 【使用图神经网络的时空感知基于会话的推荐】
+-   Time Lag Aware Sequential Recommendation. CIKM 2022 【延时感知序列推荐】
 
 
 ### Knowledge-aware Recommendations
 
--   CKAN: Collaborative Knowledge-aware Attentive Network for
-    Recommender Systems. SIGIR 2020
-
--   Attentional Graph Convolutional Networks for Knowledge Concept
-    Recommendation in MOOCs in a Heterogeneous View. SIGIR 2020
-
--   MVIN: Learning multiview items for recommendation. SIGIR 2020
-
--   Jointly Non-Sampling Learning for Knowledge Graph Enhanced
-    Recommendation. SIGIR 2020
-
--   Joint Item Recommendation and Attribute Inference: An Adaptive Graph
-    Convolutional Network Approach. SIGIR 2020
-
--   Leveraging Demonstrations for Reinforcement Recommendation Reasoning
-    over Knowledge Graphs. SIGIR 2020
-
--   SimClusters Community-Based Representations for Heterogenous
-    Recommendations at Twitter. KDD 2020
-
--   Multi-modal Knowledge Graphs for Recommender Systems. CIKM 2020
-
--   DisenHAN Disentangled Heterogeneous Graph Attention Network for
-    Recommendation. CIKM 2020
-
--   Genetic Meta-Structure Search for Recommendation on Heterogeneous
-    Information Network. CIKM 2020
-
--   TGCN Tag Graph Convolutional Network for Tag-Aware Recommendation.
-    CIKM 2020
-
--   Knowledge-Enhanced Top-K Recommendation in Poincaré Ball. AAAI 2021
-
--   Graph Heterogeneous Multi-Relational Recommendation. AAAI 2021
-
--   Knowledge-Enhanced Hierarchical Graph Transformer Network for
-    Multi-Behavior Recommendation. AAAI 2021
-
--   Alleviating Cold-Start Problems in Recommendation through
-    Pseudo-Labelling over Knowledge Graph. WSDM2021
-
--   Decomposed Collaborative Filtering Modeling Explicit and Implicit
-    Factors For Recommender Systems. WSDM 2021
-
--   Temporal Meta-path Guided Explainable Recommendation. WSDM 2021
-
--   Learning Intents behind Interactions with Knowledge Graph for
-    Recommendation. WWW 2021
+-   A Knowledge-Aware Recommender with Attention-Enhanced Dynamic Convolutional Network. CIKM 2021【动态卷积用于知识感知的推荐】
+-   Entity-aware Collaborative Relation Network with Knowledge Graph for Recommendation. CIKM 2021【short paper，KG+RS】
+-   Conditional Graph Attention Networks for Distilling and Refining Knowledge Graphs in Recommendation. CIKM 2021【GNN+KG+RS】
+-   Tracking Semantic Evolutionary Changes in Large-Scale Ontological Knowledge Bases. CIKM 2021【大规模本体知识库中语义演化的跟踪】
+-   Cycle or Minkowski: Which is More Appropriate for Knowledge Gragh Embedding? CIKM 2021【KG Embedding】
+-   HopfE: Knowledge Graph Representation Learning using Inverse Hopf Fibrations. CIKM 2021【知识图谱表示学习】
+-   Automated Query Graph Generation for Querying Knowledge Graphs. CIKM 2021【用于查询知识图谱的自动查询图生成】
+-   Differentially Private Federated Knowledge Graphs Embedding. CIKM 2021【差异化隐私联邦KG Embedding】
+-   A Lightweight Knowledge Graph Embedding Framework for Efficient Inference and Storage. CIKM 2021【轻量化KG Embedding】
+-   Predicting Instance Type Assertions in Knowledge Graphs Using Stochastic Neural Networks. CIKM 2021【知识图谱中的实例类型断言预测】
+-   When Hardness Makes a Difference: Multi-Hop Knowledge Graph Reasoning over Few-Shot Relations. CIKM 2021【小样本关系上的知识图谱多跳推理】
+-   Query Reformulation for Descriptive Queries of Jargon Words Using a Knowledge Graph based on a Dictionary. CIKM 2021【使用基于字典的知识图谱进行查询重构】
+-   Computing and Maintaining Provenance of Query Result Probabilities in Uncertain Knowledge Graphs. CIKM 2021【不确定知识图谱中计算和维护查询结果概率】
+-   REFORM: Error-Aware Few-Shot Knowledge Graph Completion. CIKM 2021【错误感知的小样本知识图谱补全】
+-   DisenKGAT: Knowledge Graph Embedding with Disentangled Graph Attention Network. CIKM 2021【KG Embedding+GNN】
+-   Complex Temporal Question Answering on Knowledge Graphs. CIKM 2021【QA+KG】
+-   Mixed Attention Transformer for Leveraging Word-Level Knowledge to Neural Cross-Lingual Information Retrieval. CIKM 2021【Transformer+IR】
+-   Knowledge Graph Representation Learning as Groupoid: Unifying TransE, RotatE, QuatE, ComplEx. CIKM 2021【知识图谱表示学习】
+-   DataType-Aware Knowledge Graph Representation Learning in Hyperbolic Space. CIKM 2021【双曲空间中基于数据类型的知识图谱表示学习】
+-   Evidential Relational-Graph Convolutional Networks for Entity Classification in Knowledge Graphs. CIKM 2021【short paper，GNN+KG】
+-   Modeling Scale-free Graphs with Hyperbolic Geometry for Knowledge-aware Recommendation. WSDM 2022【使用双曲几何建模无标度图以进行知识感知推荐】
+-   Causal Relationship over Knowledge Graphs. CIKM 2022 【知识图谱上的因果关系】
 
 ### Feature Interactions
 
--   Detecting Beneficial Feature Interactions for Recommender Systems.
-    AAAI 2021
-
--   DeepLight: Deep Lightweight Feature Interactions for Accelerating
-    CTR Predictions in Ad Serving. WSDM 2021
-
--   Multi-Interactive Attention Network for Fine-grained Feature
-    Learning in CTR Prediction. WSDM 2021
-
--   FM\^2: Field-matrixed Factorization Machines for CTR Prediction. WWW
-    2021
+-   Multi-task Learning for Bias-Free Joint CTR Prediction and Market Price Modeling in Online Advertising. CIKM 2021【在线广告无偏差联合CTR预估和市场价格建模的多任务学习】
+-   Enhancing Explicit and Implicit Feature Interactions via Information Sharing for Parallel Deep CTR Models. CIKM 2021【applied paper，用于并行 CTR 的显式和隐式特征交互增强】
+-   TSI: An Ad Text Strength Indicator using Text-to-CTR and Semantic-Ad-Similarity. CIKM 2021【applied paper，使用 Text-to-CTR 和 Semantic-Ad-Similarity 的广告文本强度指标】
+-   One Model to Serve All: Star Topology Adaptive Recommender for Multi-Domain CTR Prediction. CIKM 2021【applied paper，用于多领域CTR预估的自适应推荐】
+-   Efficient Learning to Learn a Robust CTR Model for Web-scale Online Sponsored Search Advertising. CIKM 2021【applied paper，用于在线搜索广告的CTR模型】
+-   AutoIAS: Automatic Integrated Architecture Searcher for Click-Trough Rate Prediction. CIKM 2021【CTR预估的自动集成搜索架构】
+-   Click-Through Rate Prediction with Multi-Modal Hypergraphs. CIKM 2021【使用多模态超图的点击率预测】
+-   Open Benchmarking for Click-Through Rate Prediction. CIKM 2021【开源CTR预估Benchmark】
+-   Disentangled Self-Attentive Neural Networks for Click-Through Rate Prediction. CIKM 2021【short paper，用于CTR预估的自注意力网络】
+-   AutoHERI: Automated Hierarchical Representation Integration for Post-Click Conversion Rate Estimation. CIKM 2021【short paper，用于点击后转换率估计的分层表示学习】
+-   Sequential Modeling with Multiple Attributes for Watchlist Recommendation in E-Commerce. WSDM 2022【电子商务中观察列表推荐的多属性序列建模】
+-   Modeling Users’ Contextualized Page-wise Feedback for Click-Through Rate Prediction in E-commerce Search. WSDM 2022【电子商务搜索中点击率预测的用户情境化页面反馈建模】
+-   Learning-To-Ensemble by Contextual Rank Aggregation in E-Commerce. WSDM 2022【通过电子商务中的上下文排名聚合学习集成】
+-   CAN: Feature Co-Action Network for Click-Through Rate Prediction. WSDM 2022【用于点击率预测的特征协同网络】
+-   Triangle Graph Interest Network for Click-through Rate Prediction. WSDM 2022【用于点击率预测的三角图兴趣网络】
+-   OptEmbed: Learning Optimal Embedding Table for Click-through Rate Prediction. CIKM 2022 【点击率预测的最优嵌入表】
+-   Multi-Interest Refinement by Collaborative Attributes Modeling for Click-Through Rate Prediction. CIKM 2022 【通过协作属性建模进行多兴趣细化的点击率预测】
+-   GIFT: Graph-guIded Feature Transfer for Cold-Start Video Click-Through Rate Prediction. CIKM 2022 【GIFT：用于冷启动视频点击率预测的图引导特征迁移】
+-   Graph Based Long-Term And Short-Term Interest Model for Click-Through Rate Prediction. CIKM 2022 【用于点击率预测的基于图的长期和短期兴趣模型】
+-   Hierarchically Fusing Long and Short-Term User Interests for Click-Through Rate Prediction in Product Search. CIKM 2022 【分层融合长期和短期用户兴趣以进行产品搜索中的点击率预测】
+-   Sparse Attentive Memory Network for Click-through Rate Prediction with Long Sequences. CIKM 2022 【用于长序列点击率预测的稀疏注意力记忆网络】
+-   Towards Understanding the Overfitting Phenomenon of Deep Click-Through Rate Models. CIKM 2022 【了解深度点击率模型的过拟合现象】
 
 ### Conversational Recommender System
 
--   Towards Question-based Recommender Systems. SIGIR 2020
-
--   Improving Conversational Recommender Systems via Knowledge Graph
-    based Semantic Fusion. KDD 2020
-
--   Interactive Path Reasoning on Graph for Conversational
-    Recommendation. KDD 2020
-
--   A Ranking Optimization Approach to Latent Linear Critiquing for
-    Conversational Recommender Systems. RecSys 2020
-
--   What does BERT know about books, movies and music： Probing BERT for
-    Conversational Recommendation. RecSys 2020
-
--   Adapting User Preference to Online Feedback in Multi-round
-    Conversational Recommendation. WSDM 2021
-
--   A Workflow Analysis of Context-driven Conversational Recommendation.
-    WWW 2021
-    
--   Unified Conversational Recommendation Policy Learning via Graph-based Reinforcement Learning. SIGIR 2021
-
--   Learning to Ask Appropriate Questions in Conversational Recommendation. SIGIR 2021
-
--   Comparison-based Conversational Recommender System with Relative Bandit Feedback. SIGIR 2021
+-   Popcorn: Human-in-the-loop Popularity Debiasing in Conversational Recommender Systems. CIKM 2021【采用人在回路方式进行对话推荐系统的流行度去偏】
+-   A Neural Conversation Generation Model via Equivalent Shared Memory Investigation. CIKM 2021【对话生成】
+-   C2-CRS: Coarse-to-Fine Contrastive Learning for Conversational Recommender System. WSDM 2022【对话式推荐系统的粗到细对比学习】
+-   Rethinking Conversational Recommendations: Is Decision Tree All You Need? CIKM 2022 【重新思考对话推荐：决策树是否就是我们需要的？】
+-   Two-level Graph Path Reasoning for Conversational Recommendation with User Realistic Preference. CIKM 2022 【具有用户现实偏好的会话推荐的两级图路径推理】
 
 ### Social Recommendations
 
--   Partial Relationship Aware Influence Diffusion via a Multi-channel
-    Encoding Scheme for Social Recommendation. CIKM 2020
-
--   Random Walks with Erasure: Diversifying Personalized Recommendations
-    on Social and Information Networks. WWW 2021
-
--   Dual Side Deep Context-aware Modulation for Social Recommendation.
-    WWW 2021
-
--   Self-Supervised Multi-Channel Hypergraph Convolutional Network for
-    Social Recommendation. WWW 2021
+-   Social Recommendation with Self-Supervised Metagraph Informax Network. CIKM 2021【使用自监督元图网络的社交推荐】
+-   Ranking Friend Stories on Social Platforms with Edge-Contextual Local Graph Convolutions. WSDM 2022 【基于图卷积神经网络的社交排序】
 
 ### News Recommendation
 
--   KRED:Knowledge-Aware Document Representation for News
-    Recommendations. RecSys 2020
-
--   News Recommendation with Topic-Enriched Knowledge Graphs. CIKM 2020
-
--   The Interaction between Political Typology and Filter Bubbles in
-    News Recommendation Algorithms. WWW 2021
-    
--   Personalized News Recommendation with Knowledge-aware News Interactions. SIGIR 2021
-
--   Joint Knowledge Pruning and Recurrent Graph Convolution for News Recommendation. SIGIR 2021
+-   WG4Rec: Modeling Textual Content with Word Graph for News Recommendation. CIKM 2021【使用Word Graph为新闻推荐建模文本内容】
+-   Popularity-Enhanced News Recommendation with Multi-View Interest Representation. CIKM 2021【多视角兴趣学习的流行度增强的新闻推荐】
+-   Prioritizing Original News on Facebook. CIKM 2021【applied paper，原创新闻优先级排序】
+-   DeepVT: Deep View-Temporal Interaction Network for News Recommendatio. CIKM 2022 【新闻推荐的深度视图-时间交互网络】
+-   Generative Adversarial Zero-Shot Learning for Cold-Start News Recommendation. CIKM 2022 【冷启动新闻推荐的生成对抗零样本学习】
 
 
 ### Text-aware Recommendations
 
--   TAFA: Two-headed Attention Fused Autoencoder for Context-Aware
-    Recommendations. RecSys 2020
-
--   Set-Sequence-Graph A Multi-View Approach Towards Exploiting Reviews
-    for Recommendation. CIKM 2020
-
--   TPR: Text-aware Preference Ranking for Recommender Systems. CIKM
-    2020
-
--   Leveraging Review Properties for Effective Recommendation. WWW 2021
+-   Counterfactual Review-based Recommendation. CIKM 2021【基于评论的反事实推荐】
+-   Review-Aware Neural Recommendation with Cross-Modality Mutual Attention. CIKM 2021【short paper，文本+RS+跨模态】
 
 ### POI
 
--   HME: A Hyperbolic Metric Embedding Approach for Next-POI
-    Recommendation. SIGIR 2020
-
--   Spatial Object Recommendation with Hints: When Spatial Granularity
-    Matters. SIGIR 2020
-
--   Geography-Aware Sequential Location Recommendation. KDD 2020
-
--   Learning Graph-Based Geographical Latent Representation for
-    Point-of-Interest Recommendation. CIKM 2020
-
--   STP-UDGAT Spatial-Temporal-Preference User Dimensional Graph
-    Attention Network for Next POI Recommendation. CIKM 2020
-
--   STAN: Spatio-Temporal Attention Network for next Point-of-Interest
-    Recommendation. WWW 2021
-
--   Incremental Spatio-Temporal Graph Learning for Online Query-POI
-    Matching. WWW 2021
+-   Answering POI-recommendation Questions using Tourism Reviews. CIKM 2021【使用旅游者评论回答POI问题】
+-   SNPR: A Serendipity-Oriented Next POI Recommendation Model. CIKM 2021【面向偶然性的POI推荐】
+-   ST-PIL: Spatial-Temporal Periodic Interest Learning for Next Point-of-Interest Recommendation. CIKM 2021【short paper，用于POI推荐的时空周期兴趣学习】
 
 ### Online Recommendations
 
--   Gemini: A novel and universal heterogeneous graph information fusing
-    framework for online recommendations. KDD 2020
-
--   Maximizing Cumulative User Engagement in Sequential Recommendation
-    An Online Optimization Perspective. KDD 2020
-
--   Exploring Clustering of Bandits for Online Recommendation System.
-    RecSys 2020
-
--   Contextual User Browsing Bandits for Large-Scale Online Mobile
-    Recommendation. RecSys 2020
-
--   A Hybrid Bandit Framework for Diversified Recommendation. AAAI 2021
+-   Generative Inverse Deep Reinforcement Learning for Online Recommendation. CIKM 2021【用于在线推荐的生成式逆强化学习】
+-   Long Short-Term Temporal Meta-learning in Online Recommendation. WSDM 2022【在线推荐中的长短期时间元学习】
+-   A Cooperative-Competitive Multi-Agent Framework for Auto-bidding in Online Advertising. WSDM 2022【一种用于在线广告自动竞价的合作竞争多代理框架】
+-   Knowledge Extraction and Plugging for Online Recommendation. CIKM 2022 【在线推荐的知识抽取与插入】
+-   Real-time Short Video Recommendation on Mobile Devices. CIKM 2022 【移动端实时短视频推荐】
+-   SASNet: Stage-aware sequential matching for online travel recommendation. CIKM 2022 【在线旅游推荐的阶段感知序列匹配】
 
 ### Group Recommendation
 
--   GAME: Learning Graphical and Attentive Multi-view Embeddings for
-    Occasional Group Recommendation. SIGIR 2020
-
--   GroupIM: A Mutual Information Maximizing Framework for Neural Group
-    Recommendation. SIGIR 2020
-
--   Group-Aware Long- and Short-Term Graph Representation Learning for
-    Sequential Group Recommendation. SIGIR 2020
+-   Double-Scale Self-Supervised Hypergraph Learning for Group Recommendation. CIKM 2021【用于群组推荐的自监督超图学习】
+-   DeepGroup: Group Recommendation with Implicit Feedback. CIKM 2021【short paper，隐式反馈的群组推荐】
 
 ### Multi-task/Multi-behavior/Cross-domain Recommendations
 
--   Transfer Learning via Contextual Invariants for One-to-Many
-    Cross-Domain Recommendation. SIGIR 2020
-
--   CATN: Cross-Domain Recommendation for Cold-Start Users via Aspect
-    Transfer Network. SIGIR 2020
-
--   Multi-behavior Recommendation with Graph Convolution Networks. SIGIR
-    2020
-
--   Parameter-Efficient Transfer from Sequential Behaviors for User
-    Modeling and Recommendation. SIGIR 2020
-
--   Web-to-Voice Transfer for Product Recommendation on Voice. SIGIR
-    2020
-
--   Jointly Learning to Recommend and Advertise. KDD 2020
-
--   Progressive Layered Extraction (PLE) A Novel Multi-Task Learning
-    (MTL) Model for Personalized Recommendations. RecSys 2020
-
--   Whole-Chain Recommendations. CIKM 2020
-
--   Personalized Approximate Pareto-Efficient Recommendation. WWW 2021
-
--   Federated Collaborative Transfer for Cross-Domain Recommendation. SIGIR 2021
-
--   Learning Domain Semantics and Cross-Domain Correlations for Paper Recommendation. SIGIR 2021
-
--   Graph Meta Network for Multi-Behavior Recommendation with Interaction Heterogeneity and Diversity. SIGIR 2021
+-   Cross-Market Product Recommendation. CIKM 2021【跨市场产品推荐】
+-   Expanding Relationship for Cross Domain Recommendation. CIKM 2021【扩展跨领域推荐的关系】
+-   Learning Representations of Inactive Users: A Cross Domain Approach with Graph Neural Networks. CIKM 2021【short paper，跨领域方法结合图神经网络用于学习非活跃用户表示】
+-   Low-dimensional Alignment for Cross-Domain Recommendation. CIKM 2021【short paper，跨领域推荐的低维对齐】
+-   Multi-Sparse-Domain Collaborative Recommendation via Enhanced Comprehensive Aspect Preference Learning. WSDM 2022【通过增强的综合方面偏好学习的多稀疏域协作推荐】
+-   Leaving No One Behind: A Multi-Scenario Multi-Task Meta Learning Approach for Advertiser Modeling. WSDM 2022【一种用于广告商建模的多场景多任务元学习方法】
+-   RecGURU: Adversarial Learning of Generalized User Representations for Cross-Domain Recommendation. WSDM 2022【用于跨域推荐的广义用户表示的对抗性学习】
+-   Personalized Transfer of User Preferences for Cross-domain Recommendation. WSDM 2022【跨域推荐用户偏好的个性化传输】
+-   Adaptive Domain Interest Network for Multi-domain Recommendation. CIKM 2022 【多域推荐的自适应域兴趣网络】
+-   Multi-Scale User Behavior Network for Entire Space Multi-Task Learning. CIKM 2022 【全空间多任务学习的多尺度用户行为网络】
+-   Gromov-Wasserstein Guided Representation Learning for Cross-Domain Recommendation. CIKM 2022 【跨域推荐表示学习】
+-   Contrastive Cross-Domain Sequential Recommendation. CIKM 2022 【对比跨域序列推荐】
+-   Cross-domain Recommendation via Adversarial Adaptation. CIKM 2022【通过对抗性适应进行跨域推荐】
+-   Dual-Task Learning for Multi-Behavior Sequential Recommendation. CIKM 2022 【多行为序列推荐的双任务学习】
+-   FedCDR: Federated Cross-Domain Recommendation for Privacy-Preserving Rating Prediction. CIKM 2022 【FedCDR：用于隐私保护评级预测的联合跨域推荐】
+-   Leveraging Multiple Types of Domain Knowledge for Safe and Effective Drug Recommendation. CIKM 2022 【利用多种领域知识进行安全有效的药物推荐】
+-   Multi-Faceted Hierarchical Multi-Task Learning for Recommender Systems. CIKM 2022 【推荐系统的多方面分层多任务学习】
+-   Review-Based Domain Disentanglement without Duplicate Users or Contexts for Cross-Domain Recommendation. CIKM 2022 【没有重复用户或上下文的基于审查的域解耦，用于跨域推荐】
+-   Scenario-Adaptive and Self-Supervised Model for Multi-Scenario Personalized Recommendation. CIKM 2022 【多场景个性化推荐的场景自适应自监督模型】
 
 ### Other Task
 
--   Hierarchical Fashion Graph Network for Personalized Outfit
-    Recommendation. SIGIR 2020
-
--   Octopus: Comprehensive and Elastic User Representation for the
-    Generation of Recommendation Candidates. SIGIR 2020
-
--   Goal-driven Command Recommendations for Analysts. RecSys 2020
-
--   MultiRec: A Multi-Relational Approach for Unique Item Recommendation
-    in Auction Systems. RecSys 2020
-
--   PURS: Personalized Unexpected Recommender System for Improving User
-    Satisfaction. RecSys 2020
-
--   RecSeats: A Hybrid Convolutional Neural Network Choice Model for
-    Seat Recommendations at Reserved Seating Venues. RecSys 2020
-
--   Live Multi-Streaming and Donation Recommendations via Coupled
-    Donation-Response Tensor Factorization. CIKM 2020
-
--   Learning to Recommend from Sparse Data via Generative User Feedback.
-    AAAI 2021
-
--   Real-time Relevant Recommendation Suggestion. WSDM 2021
-
--   Heterogeneous Graph Augmented Multi-Scenario Sharing Recommendation
-    with Tree-Guided Expert Networks. WSDM 2021
-
--   FINN: Feedback Interactive Neural Network for Intent Recommendation.
-    WWW 2021
-
--   Drug Package Recommendation via Interaction-aware Graph Induction.
-    WWW 2021
-
--   Large-scale Comb-K Recommendation. WWW 2021
-
--   Variation Control and Evaluation for Generative Slate
-    Recommendations. WWW 2021
-
--   Diversified Recommendation Through Similarity-Guided Graph Neural
-    Networks. WWW 2021
-
--   Clicks can be Cheating: Counterfactual Recommendation for Mitigating Clickbait Issue. SIGIR 2021
-
--   UGRec: Modeling Directed and Undirected Relations for Recommendation. SIGIR 2021
-
--   Learning Recommender Systems with Implicit Feedback via Soft Target Enhancement. SIGIR 2021
-
--   PreSizE: Predicting Size in E-Commerce using Transformers. SIGIR 2021
-
--   Path-based Deep Network for Candidate Item Matching in Recommenders. SIGIR 2021
-
--   A Study of Defensive Methods to Protect Visual Recommendation Against Adversarial Manipulation of Images. SIGIR 2021
+-   Disentangling Preference Representations for Recommendation Critiquing with $$\beta$$-VAE. CIKM 2021【用于推荐的VAE偏好表示】
+-   Top-N Recommendation with Counterfactual User Preference Simulation. CIKM 2021【反事实用户偏好模拟的Top-N推荐】
+-   Learning An End-to-End Structure for Retrieval in Large-Scale Recommendations. CIKM 2021【在大规模推荐中学习一个端到端的结构用于检索】
+-   USER: A Unified Information Search and Recommendation Model based on Integrated Behavior Sequence. CIKM 2021【基于集成行为序列的统一搜索与推荐模型】
+-   Multi-hop Reading on Memory Neural Network with Selective Coverage for Medication Recommendation. CIKM 2021【药物推荐】
+-   A Counterfactual Modeling Framework for Churn Prediction. WSDM 2022 【客户流失预测的反事实建模框架】
+-   Show Me the Whole World: Towards Entire Item Space Exploration for Interactive Personalized Recommendations. WSDM 2022【面向交互式个性化推荐的整个商品空间探索】
+-   Adapting Triplet Importance of Implicit Feedback for Personalized Recommendation. CIKM 2022 【在个性化推荐中调整隐式反馈的三元组重要性】
+-   GRP: A Gumbel-based Rating Prediction Framework for Imbalanced Recommendation. CIKM 2022 【基于 Gumbel 的不平衡推荐评级预测框架】
+-   Rank List Sensitivity of Recommender Systems to Interaction Perturbations. CIKM 2022 【推荐系统对交互扰动的排名列表敏感性】
+-   CROLoss: Towards a Customizable Loss for Retrieval Models in Recommender Systems. CIKM 2022 【推荐系统中检索模型的可定制损失】
+-   Towards Principled User-side Recommender Systems. CIKM 2022 【迈向有原则的用户侧推荐系统】
+-   A Case Study in Educational Recommenders:Recommending Music Partitures at Tomplay. CIKM 2022 【在 Tomplay 推荐音乐片段】
+-   Knowledge Enhanced Multi-Interest Network for the Generation of Recommendation Candidates. CIKM 2022 【用于生成推荐候选的知识增强多兴趣网络】
+-   UDM: A Unified Deep Matching Framework in Recommender System. CIKM 2022 【推荐系统中的统一深度匹配框架】
+-   User Recommendation in Social Metaverse with VR. CIKM 2022 【VR的用户推荐】
 
 
 Topic
@@ -517,466 +246,217 @@ Topic
 
 ### Debias in Recommender System
 
--   A General Knowledge Distillation Framework for Counterfactual
-    Recommendation via Uniform Data. SIGIR 2020
-
--   Measuring and Mitigating Item Under-Recommendation Bias in
-    Personalized Ranking Systems. SIGIR 2020
-
--   Attribute-based Propensity for Unbiased Learning in Recommender
-    Systems Algorithm and Case Studies. KDD 2020
-
--   Counterfactual Evaluation of Slate Recommendations with Sequential
-    Reward Interactions. KDD 2020
-
--   Debiasing Item-to-Item Recommendations With Small Annotated
-    Datasets. RecSys 2020
-
--   Keeping Dataset Biases out of the Simulation : A Debiased Simulator
-    for Reinforcement Learning based Recommender Systems. RecSys 2020
-
--   Unbiased Ad Click Prediction for Position-aware Advertising Systems.
-    RecSys 2020
-
--   Unbiased Learning for the Causal Effect of Recommendation. RecSys
-    2020
-
--   E-commerce Recommendation with Weighted Expected Utility. CIKM 2020
-
--   Popularity-Opportunity Bias in Collaborative Filtering. WSDM 2021
-
--   Combating Selection Biases in Recommender Systems with a Few
-    Unbiased Ratings. WSDM 2021
-
--   Leave No User Behind Towards Improving the Utility of Recommender
-    Systems for Non-mainstream Users. WSDM 2021
-
--   Non-Clicks Mean Irrelevant Propensity Ratio Scoring As a Correction.
-    WSDM 2021
-
--   Diverse User Preference Elicitation with Multi-Armed Bandits. WSDM
-    2021
-
--   Unbiased Learning to Rank in Feeds Recommendation. WSDM 2021
-
--   Cross-Positional Attention for Debiasing Clicks. WWW 2021
-
--   Debiasing Career Recommendations with Neural Fair Collaborative
-    Filtering. WWW 2021
-    
--   AutoDebias: Learning to Debias for Recommendation. SIGIR 2021
-
--   Mitigating Sentiment Bias for Recommender Systems. SIGIR 2021
-
--   Causal Intervention for Leveraging Popularity Bias in Recommendation. SIGIR 2021
-
--   Enhanced Doubly Robust Learning for Debiasing Post-Click Conversion Rate Estimation. SIGIR 2021
+-   CauSeR: Causal Session-based Recommendations for Handling Popularity Bias. CIKM 2021【short paper，用于流行度去偏的因果关系序列推荐】
+-   Mixture-Based Correction for Position and Trust Bias in Counterfactual Learning to Rank. CIKM 2021【位置和信任偏差】
+-   Unbiased Filtering of Accidental Clicks in Verizon Media Native Advertising. CIKM 2021【applied paper，广告意外点击的无偏过滤】
+-   It Is Different When Items Are Older: Debiasing Recommendations When Selection Bias and User Preferences are Dynamic. WSDM 2022【选择偏差和偏好偏差动态变化时的纠偏推荐系统】
+-   Fighting Mainstream Bias in Recommender Systems via Local Fine Tuning. WSDM 2022【通过局部微调对抗推荐系统中的主流偏见】
+-   Towards Unbiased and Robust Causal Ranking for Recommender Systems. WSDM 2022【推荐系统的无偏和稳健因果排名】
+-   Quantifying and Mitigating Popularity Bias in Conversational Recommender Systems. CIKM 2022 【量化和减轻会话推荐系统中的流行度偏差】
+-   Learning Unbiased User Behaviors Estimation with Hierarchical Recurrent Model on the Entire Space. CIKM 2022 【分层递归模型学习无偏用户行为估计】
+-   Representation Matters When Learning From Biased Feedback in Recommendation. CIKM 2022 【从推荐中的有偏反馈中学习时，表征很重要】
 
 ### Fairness in Recommender System
 
--   Fairness-Aware Explainable Recommendation over Knowledge Graphs.
-    SIGIR 2020
-
--   Ensuring Fairness in Group Recommendations by Rank-Sensitive
-    Balancing of Relevance. RecSys 2020
-
--   Fairness-Aware News Recommendation with Decomposed Adversarial
-    Learning. AAAI 2021 news
-
--   Practical Compositional Fairness Understanding Fairness in
-    Multi-Component Recommender Systems. WSDM 2021
-
--   Towards Long-term Fairness in Recommendation. WSDM 2021
-
--   Learning Fair Representations for Recommendation: A Graph-based
-    Perspective. WWW 2021
-
--   User-oriented Group Fairness In Recommender Systems. WWW 2021
-
--   Personalized Counterfactual Fairness in Recommendation. SIGIR 2021
-
--   TFROM: A Two-sided Fairness-Aware Recommendation Model for Both Customers and Providers. SIGIR 2021
-
--   Fairness among New Items in Cold Start Recommender Systems. SIGIR 2021
+-   SAR-Net: A Scenario-Aware Ranking Network for Personalized Fair Recommendation in Hundreds of Travel Scenarios. CIKM 2021【applied paper，用于个性化公平推荐的场景感知排名网络】
+-   Enumerating Fair Packages for Group Recommendations. WSDM 2022【枚举组推荐的公平包】
 
 
 ### Attack in Recommender System
 
--   Revisiting Adversarially Learned Injection Attacks Against
-    Recommender Systems. RecSys 2020
-
--   Attacking Recommender Systems with Augmented User Profiles. CIKM
-    2020
-
--   A Black-Box Attack Model for Visually-Aware Recommenders. WSDM 2021
-
--   Denoising Implicit Feedback for Recommendation. WSDM 2021
-
--   Adversarial Item Promotion: Vulnerabilities at the Core of Top-N
-    Recommenders that Use Images to Address Cold Start. WWW 2021
-
--   Graph Embedding for Recommendation against Attribute Inference
-    Attacks. WWW 2021
-    
--   Fight Fire with Fire: Towards Robust Recommender Systems via Adversarial Poisoning Training. SIGIR 2021
+-   PipAttack: Poisoning Federated Recommender Systems for Manipulating Item Promotion. WSDM 2022【用于操纵项目促销的中毒联合推荐系统】
 
 ### Explanation in Recommender System
 
--   Try This Instead: Personalized and Interpretable Substitute
-    Recommendation. KDD 2020
-
--   CAFE: Coarse-to-Fine Neural Symbolic Reasoning for Explainable
-    Recommendation. CIKM 2020
-
--   Explainable Recommender Systems via Resolving Learning
-    Representations. CIKM 2020
-
--   Generate Neural Template Explanations for Recommendation. CIKM 2020
-
--   Explainable Recommendation with Comparative Constraints on Product
-    Aspects. WSDM 2021
-
--   Explanation as a Defense of Recommendation. WSDM 2021
-
--   EX\^3: Explainable Product Set Recommendation for Comparison
-    Shopping. WWW 2021
-
--   Learning from User Feedback on Explanations to Improve Recommender
-    Models. WWW 2021
-    
--   On Interpretation and Measurement of Soft Attributes for Recommendation. SIGIR 2021
-
--   ReXPlug: Explainable Recommendation using Plug-and-Play Language Model. SIGIR 2021
-
--   User-Centric Path Reasoning towards Explainable Recommendation. SIGIR 2021
+-   Counterfactual Explainable Recommendation. CIKM 2021【反事实可解释推荐】
+-   On the Diversity and Explainability of Recommender Systems: A Practical Framework for Enterprise App Recommendation. CIKM 2021【applied paper，推荐系统的多样性和可解释性】
+-   You Are What and Where You Are: Graph Enhanced Attention Network for Explainable POI Recommendation. CIKM 2021【applied paper，Attention图神经网络用于可解释推荐】
+-   XPL-CF: Explainable Embeddings for Feature-based Collaborative Filtering. CIKM 2021【short paper，可解释Embedding用于基于特征的协同过滤】
+-   Grad-SAM: Explaining Transformers via Gradient Self-Attention Maps. CIKM 2021【short paper，通过梯度Self-Attention解释Transformer】
+-   Reinforcement Learning over Sentiment-Augmented Knowledge Graphs towards Accurate and Explainable Recommendation. WSDM 2022【对情感增强知识图的强化学习以实现准确和可解释的推荐】
+-   Explanation Guided Contrastive Learning for Sequential Recommendation. CIKM 2022 【序列推荐的解释引导对比学习】
 
 ### Long-tail/Cold-start in Recommendations
 
--   Content-aware Neural Hashing for Cold-start Recommendation. SIGIR
-    2020
-
--   MAMO: Memory-Augmented Meta-Optimization for Cold-start
-    Recommendation. KDD 2020
-
--   Learning Transferrable Parameters for Long-tailed Sequential User
-    Behavior Modeling. KDD 2020
-
--   Meta-learning on Heterogeneous Information Networks for Cold-start
-    Recommendation. KDD 2020
-
--   Cold-Start Sequential Recommendation via Meta Learner. AAAI 2021
-
--   Personalized Adaptive Meta Learning for Cold-start User Preference
-    Prediction. AAAI 2021
-
--   Task-adaptive Neural Process for User Cold-Start Recommendation. WWW
-    2021
-
--   A Model of Two Tales: Dual Transfer Learning Framework for Improved
-    Long-tail Item Recommendation. WWW 2021
-
--   Learning Graph Meta Embeddings for Cold-Start Ads in Click-Through Rate Prediction. SIGIR 2021
-
--   FORM: Follow the Online Regularized Meta-Leader for Cold-Start Recommendation. SIGIR 2021
-
--   Privileged Graph Distillation for Cold-start Recommendation. SIGIR 2021
-
--   Learning to Warm Up Cold Item Embeddings for Cold-start Recommendation with Meta Scaling and Shifting Networks. SIGIR 2021
-
--   Fairness among New Items in Cold Start Recommender Systems. SIGIR 2021
+-   CMML: Contextual Modulation Meta Learning for Cold-Start Recommendation. CIKM 2021【元学习+冷启动】
+-   Reinforcement Learning to Optimize Lifetime Value in Cold-Start Recommendation. CIKM 2021【增强学习+冷启动】
+-   Zero Shot on the Cold-Start Problem: Model-Agnostic Interest Learning for Recommender Systems. CIKM 2021【零样本学习+冷启动】
+-   Memory Bank Augmented Long-tail Sequential Recommendation. CIKM 2022 【记忆库增强】
 
 ### Diversity in Recommendations
 
-- Fast Greedy MAP Inference for Determinantal Point Process to Improve Recommendation Diversity. NIPS 2018. [PDF](https://proceedings.neurips.cc/paper/2018/file/dbbf603ff0e99629dda5d75b6f75f966-Paper.pdf)
-
--   PD-GAN: Adversarial Learning for Personalized Diversity-Promoting Recommendation. IJCAI 2019. [PDF](https://www.ijcai.org/proceedings/2019/0537.pdf)
-
--   Sequential and Diverse Recommendation with Long Tail. IJCAI 2019. [PDF](https://www.ijcai.org/proceedings/2019/0380.pdf)
-
--   Diversified Interactive Recommendation with Implicit Feedback. AAAI 2020. [PDF](https://ojs.aaai.org/index.php/AAAI/article/download/5931/5787)
-
--   ART (Attractive Recommendation Tailor): How the Diversity of Product Recommendations Affects Customer Purchase Preference in Fashion Industry. CIKM 2020. [PDF](https://dl.acm.org/doi/pdf/10.1145/3340531.3412687?casa_token=pLrkqMKPqS4AAAAA:SROCQTKY_rSZVDJa2gTQf5bRGKky_BJEnNOcXXi0A1nYDNO9cBb1FjmIucxg7NN_K42IZA5RGye3XA)
-
--   A Framework for Recommending Accurate and Diverse Items Using Bayesian Graph Convolutional Neural Networks. KDD 2020. [PDF](https://dl.acm.org/doi/pdf/10.1145/3394486.3403254?casa_token=2k8s3JpMHGQAAAAA:KQUJSQl1AT3d_f0ZhIO0PGKqu_NhPMuPS1lULeZqUSI_FqoHMpsrbTFganamJuZtbD1NJj2FU8N1GA)
-
--   Enhancing Recommendation Diversity using Determinantal Point Processes on Knowledge Graphs. SIGIR 2020. [PDF](https://dl.acm.org/doi/pdf/10.1145/3397271.3401213?casa_token=WLxAwJzJFhwAAAAA:k_i4GlcKpa6xxtdxPfZLuyyVZ_cp61I4C6pf361chyAYvYzWFQeZJjNQ95POg2UiKPECCcaF-hz9YA) 
-
--   A Hybrid Bandit Framework for Diversified Recommendation. AAAI 2021. [PDF](https://arxiv.org/pdf/2012.13245)
-
--   On the Diversity and Explainability of Recommender Systems: A Practical Framework for Enterprise App Recommendation.  CIKM 2021. [PDF](https://dl.acm.org/doi/pdf/10.1145/3459637.3481940?casa_token=x4k2BTtSkmMAAAAA:J-83ktko4ediMOH7qhGal9GmLiop5gLEUgsmffLKfJK2ITuC6m8SDdKvbG4xnttmjH2gCLL66geyog)
-
--   P-Companion:  A Principled Framework for Diversified Complementary Product Recommendation. CIKM 2021. [PDF](https://dl.acm.org/doi/pdf/10.1145/3340531.3412732)
-
--   Sliding Spectrum Decomposition for Diversified Recommendation. KDD 2021. [PDF](https://dl.acm.org/doi/pdf/10.1145/3447548.3467108?casa_token=-ODzWqfs760AAAAA:4NO7u-6ARd9lVBIuyiqCN2WKK0QCKbQUCW532MVJduRVV_0dawflyQ1y8YUXaKxMo342KmqF7Q)
-
--   Enhancing Domain-Level and User-Level Adaptivity in Diversified Recommendation.  SIGIR 2021. [PDF](https://dl.acm.org/doi/abs/10.1145/3404835.3462957) 
-
--   Dynamic Graph Construction for Improving Diversity of Recommendation. RecSys 2021. [PDF](https://dl.acm.org/doi/abs/10.1145/3460231.3478845)
-
--   Towards Unified Metrics for Accuracy and Diversity for Recommender Systems. RecSys 2021. [PDF](https://dl.acm.org/doi/pdf/10.1145/3460231.3474234)
-
--   DGCN: Diversified Recommendation with Graph Convolutional Networks.  WWW 2021. [PDF](http://fi.ee.tsinghua.edu.cn/public/publications/b344fd48-92b0-11eb-96bc-0242ac120003.pdf)
-
--   Future-Aware Diverse Trends Framework for Recommendation. WWW 2021. [PDF](https://arxiv.org/pdf/2011.00422)
-
--   Random Walks with Erasure: Diversifying Personalized Recommendations on Social and Information Networks.  WWW 2021. [PDF](https://arxiv.org/pdf/2102.09635)
-
+- Choosing the Best of All Worlds: Accurate, Diverse, and Novel Recommendations through Multi-Objective Reinforcement Learning. WSDM 2022【通过多目标强化学习的准确、多样化和新颖的推荐】
 
 ### Evaluation
 
--   Measuring Recommendation Explanation Quality: The Conflicting Goals
-    of Explanations. SIGIR 2020
+- Evaluating Human-AI Hybrid Conversational Systems with Chatbot Message Suggestions. CIKM 2021【人机混合对话系统评估】
+- POSSCORE: A Simple Yet Effective Evaluation of Conversational Search with Part of Speech Labelling. CIKM 2021【使用部分语音标签对会话搜索进行简单有效的评估】
+- KuaiRec: A Fully-observed Dataset and Insights for Evaluating Recommender Systems. CIKM 2022 【用于评估推荐系统的完全观察数据集和见解】
 
--   Evaluating Conversational Recommender Systems via User Simulation.
-    KDD 2020
+### Resource
 
--   On Sampled Metrics for Item Recommendation. KDD 2020
-
--   On Sampling Top-K Recommendation Evaluation. KDD 2020
-
--   Are We Evaluating Rigorously： Benchmarking Recommendation for
-    Reproducible Evaluation and Fair Comparison. RecSys 2020
-
--   On Target Item Sampling in Offline Recommender System Evaluation.
-    RecSys 2020
-    
--   Standing in Your Shoes: External Assessments for Personalized Recommender Systems. SIGIR 2021
+- DistRDF2ML - Scalable Distributed In-Memory Machine Learning Pipelines for RDF Knowledge Graphs. CIKM 2021 【用于RDF的分布式机器学习pipeline】
+- Evaluating Graph Vulnerability and Robustness using TIGER. CIKM 2021 【评估图的脆弱性和鲁棒性】
+- PyTorch Geometric Temporal: Spatiotemporal Signal Processing with Neural Machine Learning Models. CIKM 2021 【使用神经机器学习模型进行时空信号处理】
+- LC: A Flexible, Extensible Open-Source Toolkit for Model Compression. CIKM 2021 【LC: 用于模型压缩的灵活、可扩展的开源工具包】
+- LiteratureQA: A Qestion Answering Corpus with Graph Knowledge on Academic Literature. CIKM 2021 【LiteratureQA: 学术文献中具有图形知识的问答语料库】
+- GAKG: A Multimodal Geoscience Academic Knowledge Graph. CIKM 2021 【GAKG：多模态地球科学学术知识图谱】
+- TrUMAn: Trope Understanding in Movies and Animations. CIKM 2021 【TrUMAn: 电影和动画中的比喻理解】
+- Machamp: A Generalized Entity Matching Benchmark. CIKM 2021 【Machamp：广义实体匹配基准】
+- DL-Traff: Survey and Benchmark of Deep Learning Models for Urban Traffic Prediction. CIKM 2021 【DL-Traff：城市交通预测深度学习模型的调查和基准测试】
+- TwiBot-20: A Comprehensive Twitter Bot Detection Benchmark. CIKM 2021 【TwiBot-20：全面的 Twitter 机器人检测基准】
+- MOOCCubeX: A Large Knowledge-centered Repository for Adaptive Learning in MOOCs. CIKM 2021 【MOOCCubeX：以知识为中心的大型 MOOC 自适应学习存储库】
+- ULTRA: An Unbiased Learning To Rank Algorithm Toolbox. CIKM 2021 【ULTRA：一个无偏学习排名算法工具箱】
+- VerbCL: A Dataset of Verbatim Quotes for Highlight Extraction in Case Law. CIKM 2021 【VerbCL：判例法中用于突出显示的逐字引用数据集】
+- QuaPy: A Python-Based Framework for Quantification. CIKM 2021 【QuaPy：基于 Python 的量化框架】
+- SoMeSci— A 5 Star Open Data Gold Standard Knowledge Graph of Software Mentions in Scientific Articles. CIKM 2021 【SomeSci — 科学文章中软件提及的 5 星开放数据黄金标准知识图谱】
+- PyTerrier: Declarative Experimentation in Python from BM25 to Dense Retrieval. CIKM 2021 【PyTerrier：从 BM25 到密集检索的 Python 声明性实验】
+- ECEdgeNet: A Large Scale Edge Computing Dataset in the Field of E-commerce. CIKM 2021 【ECEdgeNet：电子商务领域的大规模边缘计算数据集】
+- Pirá: A Bilingual Portuguese-English Dataset for Question-Answering about the Ocean. CIKM 2021 【Pirá：用于海洋问答的双语葡萄牙语-英语数据集】
+- MS MARCO Chameleons: Challenging the MS MARCO Leaderboard with Extremely Obstinate Queries. CIKM 2021 【MS MARCO Chameleons：用极其顽固的查询挑战 MS MARCO 排行榜】
+- CoST: An annotated Data Collection for Complex Search. CIKM 2021 【CoST：复杂搜索的注释数据集合】
+- librec-auto: A Tool for Recommender Systems Experimentation. CIKM 2021 【librec-auto：推荐系统实验的工具】
+- Matches Made in Heaven: Toolkit and Large-Scale Datasets for Supervised Query Reformulation. CIKM 2021 【监督查询重构的工具包和大规模数据集】
+- VidLife: A Dataset for Life Event Extraction from Videos. CIKM 2021 【VidLife：从视频中提取生活事件的数据集】
+- GeoVectors: A Linked Open Corpus of OpenStreetMap Embeddings on World Scale. CIKM 2021 【GeoVectors：世界范围内 OpenStreetMap 嵌入的链接开放语料库】
+- WorldKG: A World-Scale Geographic Knowledge Graph. CIKM 2021 【WorldKG：世界级地理知识图谱】
+- RecBole: Towards a Unified, Comprehensive and Efficient Framework for Recommendation Algorithms. CIKM 2021 【RecBole：迈向统一、全面和高效的推荐算法框架】
+- RecBole 2.0: Towards a More Up-to-Date Recommendation Library. CIKM 2022 【RecBole 2.0：与时俱进的推荐库】
 
 Technique
 ---------
 
 ### Pre-training in Recommender System
 
--   S\^3-Rec: Self-Supervised Learning for Sequential Recommendation
-    with Mutual Information Maximization. CIKM 2020
-
--   Self-supervised Learning for Large-scale Item Recommendations. arXiv 2020
-
--   U-BERT Pre-Training User Representations for Improved
-    Recommendation. AAAI 2021
-
--   Pre-Training Graph Neural Networks for Cold-Start Users and Items
-    Representation. WSDM 2021
-
--   Augmenting Sequential Recommendation with Pseudo-Prior Items via
-    Reversely Pre-training Transformer. SIGIR 2021
-
--   Self-supervised Graph Learning for Recommendation. SIGIR 2021
-
--   Self-Supervised Hypergraph Convolutional Networks for Session-based
-    Recommendation. AAAI 2021
-
--   Self-Supervised Multi-Channel Hypergraph Convolutional Network
-    for Social Recommendation. WWW 2021
-
--   Pre-training Graph Transformer with Multimodal Side Information
-    for Recommendation. ACM MM2021
-
--   SelfCF: A Simple Framework for Self-supervised Collaborative
-    Filtering. arXiv 2021
-
--   UPRec: User-Aware Pre-training for Recommender Systems. arXiv 2021
-
--   Curriculum Pre-Training Heterogeneous Subgraph Transformer for
-    Top-N Recommendation. arXiv 2021
-
--   One4all User Representation for Recommender Systems in
-    E-commerce. arXiv 2021
-
--   Graph Neural Pre-training for Enhancing Recommendations using
-    Side Information. arXiv 2021
+-   Pre-training for Ad-hoc Retrieval: Hyperlink is Also You Need. CIKM 2021【Ad-hoc检索预训练】
+-   Pulling Up by the Causal Bootstraps: Causal Data Augmentation for Pre-training Debiasing. CIKM 2021【用于预训练去偏的因果关系数据增强】
+-   HORNET: Enriching Pre-trained Language Representations with Heterogeneous Knowledge Sources. CIKM 2021【异构知识来源的预训练】
+-   WebKE: Knowledge Extraction from Semi-structured Web with Pre-trained Markup Language Model. CIKM 2021【知识抽取+预训练】
+-   Natural Language Understanding with Privacy-Preserving BERT. CIKM 2021【NLU+BERT】
+-   K-AID: Enhancing Pre-trained Language Models with Domain Knowledge for Question Answering. CIKM 2021【applied paper，QA+领域知识+预训练】
+-   DialogueBERT: A Self-Supervised Learning based Dialogue Pre-training Encoder. CIKM 2021【short paper，自监督对话预训练】
+-   BERT-QPP: Contextualized Pre-trained transformers for Query Performance Prediction. CIKM 2021【short paper，用于查询性能预测的上下文预训练】
+-   CANCN-BERT: A Joint Pre-Trained Language Model for Classical and Modern Chinese. CIKM 2021【short paper，古典和现代中文的联合预训练】
+-   Distilling Knowledge from BERT into Simple Fully Connected Neural Networks for Efficient Vertical Retrieval. CIKM 2021【applied paper，知识蒸馏+预训练+检索】
+-   Adversarial Reprogramming of Pretrained Neural Networks for Fraud Detection. CIKM 2021【short paper，用于欺诈检测的预训练对抗再编程】
+-   Adversarial Domain Adaptation for Cross-lingual Information Retrieval with Multilingual BERT. CIKM 2021【short paper，使用多语言 BERT 进行跨语言信息检索的对抗域自适应】
+-   Multi-modal Dictionary BERT for Cross-modal Video Search in Baidu Advertising. CIKM 2021【applied paper，百度广告中用于跨模态视频搜索的多模态词典BERT】
+-   RABERT: Relation-Aware BERT for Target-Oriented Opinion Words Extraction. CIKM 2021【short paper，用于词提取的关系感知BERT】
+-   GBERT: Pre-training User representations for Ephemeral Group Recommendation. CIKM 2022 【为临时组推荐预训练用户表示】
 
 ### Reinforcement Learning in Recommendations
 
--   MaHRL: Multi-goals Abstraction based Deep Hierarchical Reinforcement
-    Learning for Recommendations. SIGIR 2020
-
--   Interactive Recommender System via Knowledge Graph-enhanced
-    Reinforcement Learning. SIGIR 2020
-
--   Joint Policy-Value Learning for Recommendation. KDD 2020
-
--   BLOB: A Probabilistic Model for Recommendation that Combines Organic
-    and Bandit Signals. KDD 2020
-
--   Learning to Collaborate in Multi-Module Recommendation via
-    Multi-Agent Reinforcement Learning without Communication. RecSys
-    2020
-
--   Reinforcement Learning with a Disentangled Universal Value Function
-    for Item Recommendation. AAAI 2021
-
--   User Response Models to Improve a REINFORCE Recommender System. WSDM
-    2021
-
--   Cost-Effective and Interpretable Job Skill Recommendation with Deep
-    Reinforcement Learning. WWW 2021
-
--   A Multi-Agent Reinforcement Learning Framework for Intelligent
-    Electric Vehicle Charging Recommendation. WWW 2021
-
--   Reinforcement Recommendation with User Multi-aspect Preference. WWW
-    2021
-    
--   RLNF: Reinforcement Learning based Noise Filtering for Click-Through Rate Prediction. SIGIR 2021
-
--   Unified Conversational Recommendation Policy Learning via Graph-based Reinforcement Learning. SIGIR 2021
+-   Explore, Filter and Distill: Distilled Reinforcement Learning in Recommendation. CIKM 2021【applied paper，推荐中的蒸馏强化学习】
+-   A Peep into the Future: Adversarial Future Encoding in Recommendation. WSDM 2022【推荐中的对抗性未来编码】
+-   Toward Pareto Efficient Fairness-Utility Trade-off in Recommendation through Reinforcement Learning. WSDM 2022【通过强化学习在推荐中实现帕累托高效的公平-效用权衡】
+-   Supervised Advantage Actor-Critic for Recommender Systems. WSDM 2022【推荐系统的监督优势Actor-Critic】
 
 ### Knowledge Distillation in Recommendations
 
--   Privileged Features Distillation at Taobao Recommendations. KDD 2020
-
--   DE-RRD: A Knowledge Distillation Framework for Recommender System.
-    CIKM 2020
-
--   Bidirectional Distillation for Top-K Recommender System. WWW 2021
+-   Graph Structure Aware Contrastive Knowledge Distillation for Incremental Learning in Recommender Systems. CIKM 2021【short paper，推荐系统中用于增量学习的图结构感知的对比知识蒸馏】
+-   Target Interest Distillation for Multi-Interest Recommendation. CIKM 2022 【多兴趣推荐的目标兴趣蒸馏】
 
 ### NAS in Recommendations
 
--   Neural Input Search for Large Scale Recommendation Models. KDD 2020
 
--   Field-aware Embedding Space Searching in Recommender Systems. WWW
-    2021
 
 ### Federated Learning in Recommendations
 
--   FedFast Going Beyond Average for Faster Training of Federated
-    Recommender Systems. KDD 2020
+
 
 ### GNN in Recommendations
 
--   Neural Graph Collaborative Filtering. SIGIR 2019
+- DSKReG: Differentiable Sampling on Knowledge Graph for Recommendation with Relational GNN. CIKM 2021【short paper，用于推荐的知识图谱采样】
+- UltraGCN: Ultra Simplification of Graph Convolutional Networks for Recommendation. CIKM 2021【GNN+RS】
+- How Powerful is Graph Convolution for Recommendation? CIKM 2021【GNN+RS】
+- Concept-Aware Denoising Graph Neural Network for Micro-Video Recommendation. CIKM 2021【用于微视频推荐的去噪GNN】
+- Graph Logic Reasoning for Recommendation and Link Prediction. WSDM 2022【用于推荐和链接预测的图逻辑推理】
+- Heterogeneous Global Graph Neural Networks for Personalized Session-based Recommendation. WSDM 2022【用于个性化基于会话的推荐的异构全局图神经网络】
+- Community Trend Prediction on Heterogeneous Graph in E-commerce. WSDM 2022【电子商务异构图的社区趋势预测】
+- Approximate Nearest Neighbor Search under Neural Similarity Metric for Large-Scale Recommendation. CIKM 2022 【大规模推荐的神经相似度度量下的近似最近邻搜索】
+- Automatic Meta-Path Discovery for Effective Graph-Based Recommendation. CIKM 2022 【基于图的有效推荐的自动元路径发现】
+- HySAGE: A Hybrid Static and Adaptive Graph Embedding Network for Context-Drifting Recommendations. CIKM 2022 【用于上下文漂移推荐的混合静态和自适应图嵌入网络】
+- Multi-Aggregator Time-Warping Heterogeneous Graph Neural Network for Personalized Micro-video Recommendation. CIKM 2022 【用于个性化微视频推荐的多聚合器时间扭曲异构图神经网络】
+- PlatoGL: Effective and Scalable Deep Graph Learning System for Graph-enhanced Real-Time Recommendation. CIKM 2022 【用于图增强实时推荐的有效且可扩展的深度图学习系统】
+- SVD-GCN: A Simplified Graph Convolution Paradigm for Recommendation. CIKM 2022 【用于推荐的简化图卷积范式】
+- The Interaction Graph Auto-encoder Network Based on Topology-aware for Transferable Recommendation. CIKM 2022 【基于拓扑感知的可迁移推荐交互图自动编码器网络】
 
--   A Neural Influence Diffusion Model for Social Recommendation. SIGIR 2019
+### Transformer in Recommendations
 
--   Graph Neural Networks for Social Recommendation. WWW 2019
+- LiteGT: Efficient and Lightweight Graph Transformers. CIKM 2021【高效轻量化图Transformer】
+- Block Access Pattern Discovery via Compressed Full Tensor Transformer. CIKM 2021【Transformer压缩】
+- Mixed Attention Transformer for Leveraging Word-Level Knowledge to Neural Cross-Lingual Information Retrieval. CIKM 2021【用于跨语言信息检索的混合注意力Transformer】
+- Match-Ignition: Plugging PageRank into Transformer for Long-form Text Matching. CIKM 2021【PageRank+Transformer】
+- DCAP: Deep Cross Attentional Product Network for User Response Prediction. CIKM 2021【用于用户响应预测的交叉注意力产品网络】
+- Storage-saving Transformer for Sequential Recommendations. CIKM 2022 【用于序列推荐的节省存储的Transformer】
+- Contrastive Learning with Bidirectional Transformers for Sequential Recommendation. CIKM 2022 【用于序列推荐的双向 Transformer 对比学习】
 
--   Knowledge Graph Convolutional Networks for Recommender Systems. WWW 2019
+### Contrastive Learning in Recommendations
 
--   KGAT: Knowledge Graph Attention Network for Recommendation. KDD 2019
+- Contrastive Pre-Training of GNNs on Heterogeneous Graphs. CIKM 2021【图神经网络的对比预训练】
+- Contrastive Curriculum Learning for Sequential User Behavior Modeling via Data Augmentation. CIKM 2021【applied paper，通过数据增强进行序列用户行为建模的对比课程学习】
+- Semi-deterministic and Contrastive Variational Graph Autoencoder for Recommendation. CIKM 2021【用于推荐的半确定性和对比变分图自动编码器】
+- Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation. WSDM 2022【序列推荐中表征退化问题的对比学习】
+- Prototypical Contrastive Learning And Adaptive Interest Selection for Candidate Generation in Recommendations. CIKM 2022 【候选生成的原型对比学习和自适应兴趣选择】
+- Multi-level Contrastive Learning Framework for Sequential Recommendation. CIKM 2022 【序列推荐多层次对比学习框架】
+- Improving Knowledge-aware Recommendation with Multi-level Interactive Contrastive Learning. CIKM 2022 【通过多层次交互式对比学习改进知识感知推荐】
+- MIC:Model-agnostic Integrated Cross-channel Recommender. CIKM 2022 【与模型无关的集成跨渠道推荐器】
+- Temporal Contrastive Pre-Training for Sequential Recommendation. CIKM 2022 【时序推荐的时间对比预训练】
 
--   Session-based recommendation with graph neural networks. AAAI 2019
+### Multi-Modality in Recommendations
 
--   Graph contextualized self-attention network for session-based
-    recommendation. IJCAI 2019
+- Student Can Also be a Good Teacher: Extracting Knowledge from Vision-and-Language Model for Cross-Modal Retrieval. CIKM 2021【short paper，用于跨模态检索的知识提取】
+- Supervised Contrastive Learning for Multimodal Unreliable News Detection in COVID-19 Pandemic. CIKM 2021【short paper，用于多模态不可靠新闻检测的有监督对比学习】
+- AutoMARS: Searching to Compress Multi-Modality Recommendation Systems. CIKM 2022 【搜索压缩多模态推荐系统】
+- Multimodal Meta-Learning for Cold-Start Sequential Recommendation. CIKM 2022 【冷启动序列推荐的多模态元学习】
 
--   Session-based social recommendation via dynamic graph attention
-    networks. WSDM 2019
+### Data Augmentation in Recommendations
 
--   Fi-GNN: Modeling Feature Interactions via Graph Neural Networks for
-    CTR Prediction. WWW 2019
+- Influence-guided Data Augmentation for Neural Tensor Completion. CIKM 2021【用于张量补全的数据增强】
+- Learning to Augment Imbalanced Data for Re-ranking Models. CIKM 2021【用于再排序模型的数据增强】
+- Action Sequence Augmentation for Early Graph-based Anomaly Detection. CIKM 2021【用于异常检测的动作序列增强】
+- A Relevant and Diverse Retrieval-enhanced Data Augmentation Framework for Sequential Recommendation. CIKM 2022 【Applied Research Track, 用于顺序推荐的相关且多样化的检索增强数据增强框架】
+- MARIO: Modality-Aware Attention and Modality-Preserving Decoders for Multimedia Recommendation. CIKM 2022 【用于多媒体推荐的模态感知注意力和模态保留解码器】
 
--   Bundle Recommendation with Graph Convolutional Networks. SIGIR 2020
+### Meta Learning in Recommendations
 
--   Sequential Recommendation with Graph Convolutional Networks. 
-    SIGIR 2021
+- Multimodal Graph Meta Contrastive Learning. CIKM 2021【short paper，多模态元图对比学习】
+- Meta-Learning Based Hyper-Relation Feature Modeling for Out-of-Knowledge-Base Embedding. CIKM 2021【基于元学习的超关系特征建模】
+- HetMAML: Task-Heterogeneous Model-Agnostic Meta-Learning for Few-Shot Learning Across Modalities. CIKM 2021【Meta Learning+Few-Shot Learning】
+- Pruning Meta-Trained Networks for On-Device Adaptation. CIKM 2021【用于设备自适应的元训练网络剪枝】
+- Meta Hyperparameter Optimization with Adversarial Proxy Subsets Sampling. CIKM 2021【元超参优化】
+- Contrastive Meta Learning with Behavior Multiplicity for Recommendation. WSDM 2022【具有行为多样性的对比元学习推荐】
 
--   Structured Graph Convolutional Networks with Stochastic Masks for
-    Recommender Systems. SIGIR 2021
+### Few-Shot Learning in Recommendations
 
--   Adversarial-Enhanced Hybrid Graph Network for User Identity Linkage.
-    SIGIR 2021
-
--   Should Graph Convolution Trust Neighbors? A Simple Causal Inference
-    Method. SIGIR 2021
-
--   A Graph-Convolutional Ranking Approach to Leverage the Relational
-    Aspects of User-Generated Content. SIGIR 2021
-
--   Relational Learning with Gated and Attentive Neighbor Aggregator for
-    Few-Shot Knowledge Graph Completion. SIGIR 2021
-
--   Learning Graph Meta Embeddings for Cold-Start Ads in Click-Through
-    Rate Prediction. SIGIR 2021
-
--   Neural Graph Matching based Collaborative Filtering. SIGIR 2021
-
--   Modeling Intent Graph for Search Result Diversification. SIGIR 2021
-
--   User-Centric Path Reasoning towards Explainable Recommendation.
-    SIGIR 2021
-
--   Joint Knowledge Pruning and Recurrent Graph Convolution for News
-    Recommendation. SIGIR 2021
-
--   Retrieving Complex Tables with Multi-Granular Graph Representation
-    Learning. SIGIR 2021
-
--   Privileged Graph Distillation for Cold-start Recommendation. SIGIR 2021
-
--   Decoupling Representation Learning and Classification for GNN-based
-    Anomaly Detection. SIGIR 2021
-
--   Meta-Inductive Node Classification across Graphs. SIGIR 2021
-
--   Self-supervised Graph Learning for Recommendation. SIGIR 2021
-
--   TIE: A Framework for Embedding-based Incremental Temporal Knowledge
-    Graph Completion. SIGIR 2021
-
--   Graph Meta Network for Multi-Behavior Recommendation with Interaction
-    Heterogeneity and Diversity. SIGIR 2021
-
--   AdsGNN: Behavior-Graph Augmented Relevance Modeling in Sponsored Search.
-    SIGIR 2021
-
--   Enhanced Graph Learning for Collaborative Filtering via Mutual
-    Information Maximization. SIGIR 2021
-
--   WGCN: Graph Convolutional Networks with Weighted Structural Features.
-    SIGIR 2021
+- Behind the Scenes: An Exploration of Trigger Biases Problem in Few-Shot Event Classification. CIKM 2021【小样本学习中偏差问题的探讨】
+- Learning Discriminative and Unbiased Representations for Few-Shot Relation Extraction. CIKM 2021【用于小样本关系提取的无偏表示学习】
+- Multi-view Interaction Learning for Few-Shot Relation Classification. CIKM 2021【用于小样本关系分类的多视角交互学习】
+- One-shot Transfer Learning for Population Mapping. CIKM 2021【单样本迁移学习】
+- Boosting Few-shot Abstractive Summarization with Auxiliary Tasks. CIKM 2021【short paper，使用辅助任务提升小样本摘要】
+- Multi-objective Few-shot Learning for Fair Classification. CIKM 2021【short paper，Few-Shot Learning+Classification】
+- Few-shot Link Prediction in Dynamic Networks. WSDM 2022 【动态网络中的少样本链接预测研究】
+- Tiger: Transferable Interest Graph Embedding for Domain-Level Zero-Shot Recommendation. CIKM 2022 【用于域级零样本推荐的可迁移兴趣图嵌入】
 
 
 Analysis
 --------
 
--   How Dataset Characteristics Affect the Robustness of Collaborative
-    Recommendation Models. SIGIR 2020
+-   Profiling the Design Space for Graph Neural Networks based Collaborative Filtering. WSDM 2022【分析基于图神经网络的协同过滤的设计空间】
 
--   Agreement and Disagreement between True and False-Positive Metrics
-    in Recommender Systems Evaluation. SIGIR 2020
-
--   Critically Examining the Claimed Value of Convolutions over
-    User-Item Embedding Maps for Recommender Systems. CIKM 2020
-
--   On Estimating Recommendation Evaluation Metrics under Sampling. AAAI
-    2021
-
--   Beyond Point Estimate Inferring Ensemble Prediction Variation from
-    Neuron Activation Strength in Recommender Systems. WSDM 2021
-
--   Bias-Variance Decomposition for Ranking. WSDM 2021
-
--   Theoretical Understandings of Product Embedding for E-commerce
-    Machine Learning. WSDM 2021
-
-Other
+Others
 -----
 
--   Learning Personalized Risk Preferences for Recommendation. SIGIR
-    2020
-
--   Distributed Equivalent Substitution Training for Large-Scale
-    Recommender Systems. SIGIR 2020
-
--   Beyond User Embedding Matrix: Learning to Hash for Modeling
-    Large-Scale Users in Recommendation. SIGIR 2020
-
--   How to Retrain a Recommender System? SIGIR 2020
-
--   Recommendation for New Users and New Items via Randomized Training
-    and Mixture-of-Experts Transformation. SIGIR 2020
-
--   Compositional Embeddings Using Complementary Partitions for
-    Memory-Efficient Recommendation Systems. KDD 2020
-
--   Improving Recommendation Quality in Google Drive. KDD 2020
-
--   A Method to Anonymize Business Metrics to Publishing Implicit
-    Feedback Datasets. RecSys 2020
-
--   Exploiting Performance Estimates for Augmenting Recommendation
-    Ensembles. RecSys 2020
-
--   User Simulation via Supervised Generative Adversarial Network. WWW
-    2021
+-   Joint Learning of E-commerce Search and Recommendation with A Unified Graph Neural Network. WSDM 2022【电子商务搜索和推荐与统一图神经网络的联合学习】
+-   Hierarchical Imitation Learning via Subgoal Representation Learning for Dynamic Treatment Recommendation. WSDM 2022【基于动态治疗推荐的子目标表示学习的分层模仿学习】
+-   PLdFe-RR:Personalized Long-distance Fuel-efficient Route Recommendation Based On Historical Trajectory. WSDM 2022【基于历史轨迹的个性化长途省油路线推荐】
+-   The Datasets Dilemma: How Much Do We Really Know About Recommendation Datasets? WSDM 2022【数据集困境：我们对推荐数据集真正了解多少？】
+-   On Sampling Collaborative Filtering Datasets. WSDM 2022【关于采样协同过滤数据集】
+-   Leveraging World Events to Predict E-Commerce Consumer Demand under Anomaly. WSDM 2022【利用世界事件预测异常情况下的电子商务消费者需求】
+-   Scope-aware Re-ranking with Gated Attention in Feed. WSDM 2022【在 Feed 中使用 Gated Attention 进行范围感知重新排名】
+-   Best practices for top-N recommendation evaluation: Candidate set sampling and Statistical inference techniques. CIKM 2022 【候选集抽样和统计推断技术】
+-   PROPN: Personalized Probabilistic Strategic Parameter Optimization in Recommendations. CIKM 2022 【推荐中的个性化概率策略参数优化】
+-   Multi-granularity Fatigue in Recommendation. CIKM 2022 【推荐中的多粒度疲劳】
+-   A Multi-Interest Evolution Story: Applying Psychology in Query-based Recommendation for Inferring Customer Intention. CIKM 2022 【在基于查询的推荐中应用心理学以推断客户意图】
+-   Improving Text-based Similar Product Recommendation for Dynamic Product Advertising at Yahoo. CIKM 2022 【改进雅虎动态产品广告的基于文本的相似产品推荐】
+-   E-Commerce Promotions Personalization via Online Multiple-Choice Knapsack with Uplift Modeling. CIKM 2022 【在线的电子商务促销个性化】
