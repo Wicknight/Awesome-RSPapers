@@ -48,12 +48,12 @@ AAAI 2021, WSDM 2021, WWW 2021, SIGIR 2021, CIKM 2021, CIKM 2022, WSDM 2022
     -   [Federated Learning in
         Recommendations](#federated-learning-in-recommendations)
     -   [GNN in Recommendations](#gnn-in-Recommendations)
-    -   [Transformer in Recommendations](#gnn-in-Recommendations)
-    -   [Contrastive Learning in Recommendations](#gnn-in-Recommendations)
-    -   [Multi-Modality in Recommendations](#gnn-in-Recommendations)
-    -   [Data Augmentation in Recommendations](#gnn-in-Recommendations)
-    -   [Meta Learning in Recommendations](#gnn-in-Recommendations)
-    -   [Few-Shot Learning in Recommendations](#gnn-in-Recommendations)
+    -   [Transformer in Recommendations](#transformer-in-Recommendations)
+    -   [Contrastive Learning in Recommendations](#contrastive-learning-in-Recommendations)
+    -   [Multi-Modality in Recommendations](#multi-modality-in-Recommendations)
+    -   [Data Augmentation in Recommendations](#data-augmentation-in-Recommendations)
+    -   [Meta Learning in Recommendations](#meta-learning-in-Recommendations)
+    -   [Few-Shot Learning in Recommendations](#few-shot-learning-in-Recommendations)
 -   [Analysis](#analysis)
 -   [Other](#other)
 
