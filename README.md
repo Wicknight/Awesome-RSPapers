@@ -223,7 +223,7 @@ Task
 
 ### Other Task
 
--   Disentangling Preference Representations for Recommendation Critiquing with \beta-VAE. CIKM 2021【用于推荐的VAE偏好表示】
+-   Disentangling Preference Representations for Recommendation Critiquing with $\beta$-VAE. CIKM 2021【用于推荐的VAE偏好表示】
 -   Top-N Recommendation with Counterfactual User Preference Simulation. CIKM 2021【反事实用户偏好模拟的Top-N推荐】
 -   Learning An End-to-End Structure for Retrieval in Large-Scale Recommendations. CIKM 2021【在大规模推荐中学习一个端到端的结构用于检索】
 -   USER: A Unified Information Search and Recommendation Model based on Integrated Behavior Sequence. CIKM 2021【基于集成行为序列的统一搜索与推荐模型】
